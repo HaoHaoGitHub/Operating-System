@@ -8,7 +8,8 @@ a process tree that represents the fully parsed mathematical expression.
 ## Structure
 
               10        (- 10 4)        18
-  PARENT:    pipe()
+
+             pipe()
              fork()                                    <=== 1 child process
                           pipe()
                           fork()                       <=== 2 children
