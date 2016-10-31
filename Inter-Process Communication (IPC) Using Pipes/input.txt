@@ -1,0 +1,4 @@
+# Test case for multiplication, addition, and subtraction
+#  with three layers
+#
+(* 99 (+ 88 (- 77 66)) 55)
