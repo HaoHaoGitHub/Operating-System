@@ -21,5 +21,6 @@ completes, the process returns to state (a) and is added to the ready queue
 (its position within the queue is based on the CPU scheduling algorithm)
 
 ## Complie 
-g++ -Wall *.cpp
+g++ -Wall *.cpp 
+
 ./a.out process.txt output.txt
