@@ -7,9 +7,9 @@ a process tree that represents the fully parsed mathematical expression.
 
 ## Structure
 
-              10        (- 10 4)        18
+              10         (- 10 4)        18
 
-             pipe()
+    PARENT:  pipe()
              fork()                                    <=== 1 child process
                           pipe()
                           fork()                       <=== 2 children
@@ -25,3 +25,9 @@ a process tree that represents the fully parsed mathematical expression.
 
              /* we have the result for the given expression */
                                      
+      process_expr( "(* 10 (- 10 4) 18)", i, j )    <=== happens in the parent
+                     i                j
+
+
+       ...... process_expr( "(- 10 4)", i, j )     <=== happens in the child
+                             i      j
