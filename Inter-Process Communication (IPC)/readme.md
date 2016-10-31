@@ -6,6 +6,7 @@ More specifically, my program will call fork() to create child processes to perf
 a process tree that represents the fully parsed mathematical expression. 
 
 ## Structure
+
   process_expr( "(* 10 (- 10 4) 18)", i, j )    <=== happens in the parent
                  i                j
 
@@ -17,7 +18,7 @@ a process tree that represents the fully parsed mathematical expression.
           "(* 10 (- 10 4) 18)"          <===== 
               ^^ ^^^^^^^^ ^^
 
-              10         （- 10 4）      18
+              10        (- 10 4)        18
   PARENT:    pipe()
              fork()                                    <=== 1 child process
                           pipe()
@@ -33,6 +34,4 @@ a process tree that represents the fully parsed mathematical expression.
                                        waitpid()       <=== 0 children/zombies
 
              /* we have the result for the given expression */
-    
-    Recursion is used here.
     
