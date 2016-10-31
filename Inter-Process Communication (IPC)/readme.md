@@ -18,6 +18,7 @@ a process tree that represents the fully parsed mathematical expression.
           "(* 10 (- 10 4) 18)"          <===== 
               ^^ ^^^^^^^^ ^^
 
+
               10        (- 10 4)        18
   PARENT:    pipe()
              fork()                                    <=== 1 child process
