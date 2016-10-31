@@ -7,14 +7,14 @@ a process tree that represents the fully parsed mathematical expression.
 
 ## Structure
 
-process_expr( "(* 10 (- 10 4) 18)", i, j )      <== happens in the parent
-               i                j
-  ...... process_expr( "(- 10 4)", i, j)        <== happens in the child
-                        i      j
+process_expr( "(* 10 (- 10 4) 18)", i, j )      <== happens in the parent <br />
+               i                j                                         <br />
+  ...... process_expr( "(- 10 4)", i, j)        <== happens in  the child  <br />
+                        i      j                                           <br />
                      
-             10          (-10 4)       18
-PARENT:     pipe()
-            fork()                              <== 1 child process
+             10          (-10 4)       18                                   <br />
+PARENT:     pipe()                                                          <br />
+            fork()                              <== 1 child process           <br />
                           pipe()
                           fork()                <== 2 children
                                      pipe()
