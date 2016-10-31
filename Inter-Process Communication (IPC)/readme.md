@@ -17,7 +17,7 @@ a process tree that represents the fully parsed mathematical expression.
           "(* 10 (- 10 4) 18)"          <===== 
               ^^ ^^^^^^^^ ^^
 
-              10        (- 10 4)        18
+              10         （- 10 4）      18
   PARENT:    pipe()
              fork()                                    <=== 1 child process
                           pipe()
@@ -35,3 +35,4 @@ a process tree that represents the fully parsed mathematical expression.
              /* we have the result for the given expression */
     
     Recursion is used here.
+    
