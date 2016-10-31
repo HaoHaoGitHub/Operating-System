@@ -11,7 +11,7 @@ process_expr( "(* 10 (- 10 4) 18)", i, j )      <== happens in the parent
                i                j
   ...... process_expr( "(- 10 4)", i, j)        <== happens in the child
                         i      j
-    ----------------------------------------------------                         
+                     
              10          (-10 4)       18
 PARENT:     pipe()
             fork()                              <== 1 child process
