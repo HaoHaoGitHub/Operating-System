@@ -7,7 +7,6 @@ More specifically, my program will call fork() to create child processes to perf
 a process tree that represents the fully parsed mathematical expression. 
 
 ## Structure
-
   process_expr( "(* 10 (- 10 4) 18)", i, j )    <=== happens in the parent
                  i                j
 
