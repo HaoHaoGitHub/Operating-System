@@ -1,7 +1,6 @@
 # Inter-Process Communication (IPC) using Pipes in C
 ## Introduction 
 I use C to implement a fork-based calculator program. 
-(A key requirement here is to parallelize all processing to the extent possible)
 Overall, my progrm reads an input file that specifies a set of calculations to be made using a Scheme/LISP-like format.
 More specifically, my program will call fork() to create child processes to perform each calculation, thus constructing
 a process tree that represents the fully parsed mathematical expression. 
@@ -17,7 +16,6 @@ a process tree that represents the fully parsed mathematical expression.
 
           "(* 10 (- 10 4) 18)"          <===== 
               ^^ ^^^^^^^^ ^^
-
 
               10        (- 10 4)        18
   PARENT:    pipe()
